@@ -6,5 +6,6 @@ cmake_minimum_required(VERSION 3.16)
 
 add_compile_definitions(CFG_TUSB_CONFIG_FILE="tusb_config.h")
 include_directories(${CMAKE_CURRENT_LIST_DIR}/main)
+
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
 project(pcm1864_uac24ch)
