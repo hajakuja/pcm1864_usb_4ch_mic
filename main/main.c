@@ -8,6 +8,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "tusb.h"
+#include "board.h"
 
 #define USBD_STACK_SIZE 4096
 // #define BLINKY_STACK_SIZE configMINIMAL_STACK_SIZE
@@ -61,7 +62,7 @@ void audio_isr_task(void *param);
 
 /*------------- MAIN -------------*/
 int app_main(void) {
-//   board_init();
+  board_init();
 
   // Init values
   sampFreq = AUDIO_SAMPLE_RATE;
