@@ -1,4 +1,13 @@
-# How to build example for Esp32s3
+# Gargoyle
+
+
+## ESP32 adapter firmware for pcm1864 4ch mic -> USB UAC2
+
+This firmware is based on an example from TinyUSB and thus is built differently from usual ESP-IDF projects.
+
+## Build and flash instructions
+    
+### How to build example for Esp32s3
 1. Load idf environment variables (eg. using the esp-idf alias `get_idf` if configured)
 
 2. cd into examples directory
